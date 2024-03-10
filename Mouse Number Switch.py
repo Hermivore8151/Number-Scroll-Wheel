@@ -11,11 +11,11 @@ last_tilt_time = 0
 # Minimum time (in seconds) between two consecutive tilt events
 min_tilt_interval = 0.15
 
-# This function will be called every time the mouse is tilted or the mouse wheel is clicked
+# Called every time it runs
 def on_tilt(x, y, dx, dy):
     global current_number, last_tilt_time
     if time.time() - last_tilt_time < min_tilt_interval:
-        # Ignore the event if it's too soon after the previous one
+        # Ignore if its too recent
         return
     last_tilt_time = time.time()
     
@@ -35,7 +35,6 @@ def on_tilt(x, y, dx, dy):
 
 def on_click(x, y, button, pressed):
     if button == button.middle and pressed:
-        # Simulate a key press and release of the current number
         keyboard.press_and_release(str(numbers[current_number]))
 
 # Start listening for mouse events
