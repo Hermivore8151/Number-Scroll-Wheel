@@ -1,5 +1,10 @@
 # Scrolling-Hotbar
-A macro that allows for L/R Tilt of a mousewheel to cycle hotbar buttons
+A macro that allows for L/R Tilt of a mousewheel to cycle hotbar button, and the press to press the number
 
+# Usage
+- Download the .exe or .py
+- Run it, and it should work
 
-i need to fix the damn thing, the delay is like 0.05 between each cycle and i dont know why 😭
+# Notes
+- make sure you mouse supports left/right tilt
+- Pressing down on the mouse wheel will press the current number
